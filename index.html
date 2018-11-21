@@ -40,6 +40,22 @@
         });
       });
     </script>
+    <script>
+      $(function() {
+        $("head").append(
+          '<style type="text/css">.form-wrapper{opacity: 0;margin-top:10em;}'
+        );
+        $(window).load(function() {
+          var delaySpeed = 200;
+          var fadeSpeed = 1000;
+          $(".form-wrapper").each(function(i) {
+            $(this)
+              .delay(i * delaySpeed)
+              .animate({ opacity: "1", marginTop: "5em" }, fadeSpeed);
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="form-wrapper">
