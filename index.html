@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kazuki Isogai</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#particles").particleground({
+          minSpeedX: 0.1,
+          maxSpeedX: 0.8,
+          minSpeedY: 0.1,
+          maxSpeedY: 0.8,
+          directionX: "center", // 'center', 'left' or 'right'. 'center' = dots bounce off edges
+          directionY: "center", // 'center', 'up' or 'down'. 'center' = dots bounce off edges
+          density: 10000, // How many particles will be generated: one particle every n pixels
+          dotColor: "#666666",
+          lineColor: "#666666",
+          particleRadius: 7, // Dot size
+          lineWidth: 1,
+          curvedLines: false,
+          proximity: 100, // How close two dots need to be before they join
+          parallax: true,
+          parallaxMultiplier: 3, // The lower the number, the more extreme the parallax effect
+          onInit: function() {},
+          onDestroy: function() {}
+        });
+      });
+    </script>
+    <script>
+      $(function() {
+        $("head").append(
+          '<style type="text/css">.form-wrapper{opacity: 0;margin-top:10em;}'
+        );
+        $(window).load(function() {
+          var delaySpeed = 200;
+          var fadeSpeed = 1000;
+          $(".form-wrapper").each(function(i) {
+            $(this)
+              .delay(i * delaySpeed)
+              .animate({ opacity: "1", marginTop: "5em" }, fadeSpeed);
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <div style="text-align:center"><img src="images/icon.jpg" /></div>
+      <h1>Kazuki Isogai</h1>
+      <p class="text">
+        趣味でWEBサイトを作ってたりします。<br />
+        WEB/Movie/Engineer/Designer...
+      </p>
+      <div class="bottom">
+        <div class="social">
+          <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+          <a
+            class="facebook"
+            href="https://www.facebook.com/profile.php?id=100010094224989"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a class="github" href="https://github.com/isso-719"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a class="instagram" href="https://www.instagram.com/isogai_kazuki/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a class="email" href="mailto:i@kazukiisogai.net"
+            ><i class="far fa-envelope"></i
+          ></a>
+        </div>
+        <p class="prepare">Twitterと作品集は準備中...</p>
+      </div>
+    </div>
+    <div id="particles"></div>
+  </body>
+</html>
