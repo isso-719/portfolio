@@ -150,7 +150,7 @@ img {
 
 .instagram {
   color: #fff;
-  background: #fca746;
+  background: #ffc420;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
@@ -169,5 +169,29 @@ img {
 }
 
 .instagram:hover {
-  background: #fca746d0;
+  background: #ffc420d0;
+}
+
+.email {
+  color: #fff;
+  background: #ff933b;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-family: fontawesome;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 28px;
+  padding-top: 12px;
+  margin: 0 2px;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-font-smoothing: antialiased;
+}
+
+.email:hover {
+  background: #ff933bd0;
 }
