@@ -23,10 +23,9 @@ body {
   font: 400 87.5%/1.5em "Noto Sans", sans-serif;
 }
 
-.pace-running body {
+/* .pace-running body {
   display:none;
-}
-
+} */
 
 #particles {
   width: 100%;
@@ -99,6 +98,7 @@ body {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-font-smoothing: antialiased;
+  margin-right: 1em;
 }
 
 .twitter:hover {
@@ -123,6 +123,7 @@ body {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-font-smoothing: antialiased;
+  margin-right: 1em;
 }
 
 .facebook:hover {
@@ -147,6 +148,7 @@ body {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-font-smoothing: antialiased;
+  margin-right: 1em;
 }
 
 .github:hover {
@@ -171,6 +173,7 @@ body {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-font-smoothing: antialiased;
+  margin-right: 1em;
 }
 
 .instagram:hover {
@@ -195,6 +198,7 @@ body {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-font-smoothing: antialiased;
+  /* margin-right: 1em; */
 }
 
 .email:hover {
